@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 body {
     font-family: var(--font_serif);
     font-size: 20px;
@@ -11,5 +13,9 @@ h1 {
 
 h1, h2, h3 {
     font-family: var(--font_sans);
-    color: var(--color_orange);
+    color: var(--color_gold);
+}
+
+.cap {
+    @include cap;
 }
